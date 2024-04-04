@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.review-box {
+  width: 90%; /* Adjusted for responsiveness */
+  max-width: 1200px;
+  margin: auto;
+
+  margin-top: 30px;
+  border: 3px solid #8ac763;
+  background-color: #fff;
+  border-radius: 16px;
+  height: auto;
+  padding: 25px;
+}
+
+.review-card {
+  text-align: center;
+  border: 3px solid #8ac763;
+  border-radius: 28px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0 0 0 / 48%);
+}
+
+.caurosel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.left-arrow {
+  width: 10%;
+  display: flex;
+  color: #7fad62;
+  cursor: pointer;
+}
+
+.right-arrow {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  color: #7fad62;
+  cursor: pointer;
+}
+
+.comment {
+  width: 80%;
+}
+
+.caurosel p {
+  text-align: start;
+}
+
+.title p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.comment p {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* rating */
+
+.rating {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 20px;
+  padding: 8px;
+  color: #e3a119; /* Golden color */
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color: #ffd700; /* Golden color */
+}
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 768px) {
+  .review-box {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .left-arrow,
+  .right-arrow,
+  .comment {
+    width: 100%;
+  }
+}

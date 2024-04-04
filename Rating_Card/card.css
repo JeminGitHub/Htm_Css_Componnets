@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.comment-card {
+  width: 1200px;
+  margin: auto;
+
+  margin-top: 30px;
+  border: 3px solid #8ac763;
+  background-color: #fff;
+
+  height: 350px;
+  padding: 15px;
+}
+
+.drop-container {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: -14px;
+  margin-left: -15px;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #8ac763;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Arrow styling */
+.dropbtn::after {
+  content: "▼";
+  margin-left: 5px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 20px;
+  padding: 6px;
+  color: #e3a119;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color: #ffd700; /* Golden color */
+}
+
+.cards-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.card {
+  height: 220px;
+  align-items: center;
+  text-align: center;
+  border: 3px solid #8ac763;
+  width: 200px;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  font-size: 9px;
+  text-align: start;
+  padding: 5px;
+}
+
+#card-title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+  margin-top: -3px;
+  margin: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .comment-card {
+      width: 80%;
+      margin-top: 15px;
+      height: auto;
+    }
+  
+    .cards-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }

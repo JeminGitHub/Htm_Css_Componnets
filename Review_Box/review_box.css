@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.review-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+
+  margin-top: 30px;
+
+  background-color: #fff;
+
+  height: auto;
+  padding: 14px;
+}
+
+.phase-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  background-color: #1c4e85;
+  color: #fff;
+  padding: 9px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.custom-button i {
+  margin-right: 10px;
+}
+
+.left {
+  margin-top: -25px;
+}
+.left p{
+  font-weight: 500;
+  color: #7fAd62;
+}
+
+.comment-content{
+  display: flex;
+
+}
+
+.comment-type{
+  display: flex;
+}
+
+.comment-type img{
+  margin-left: 10px;
+}
+.reply{
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.reply img{
+  margin-left: 10px;
+}
+
+.reply p{
+  margin-left: 10px;
+}
+
+#name{
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7fAd62;
+}
+
+
+
+.star-rating {
+  font-size: 24px;
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  color: #e3a119;
+  position: relative;
+  margin-left: 10px;
+}
+
+.star-rating:hover:before,
+.star-rating:hover ~ .star:before {
+  content: "\2605";
+  color: #e3a119; /* Change this to the desired color for the hovered state */
+  position: absolute;
+}
+
+.star {
+  display: inline-block;
+  position: relative;
+}
+
+.star:before {
+  content: "\2606";
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+ 
+}
+
+.rating p {
+  margin-left: 10px;
+  color: #a2a3a1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.comment-type p{
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#text-type{
+  margin-bottom: -22px;
+  margin-top: -16px;
+}
+
+
+#feedback-text{
+  margin-top: 10px;
+}
+
+
+.feedback img{
+  cursor: pointer;
+}
